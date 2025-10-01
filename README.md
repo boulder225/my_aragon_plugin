@@ -1,66 +1,50 @@
-## Foundry
+# Aragon Plugin Development
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project is set up for developing custom plugins for Aragon OSx using Foundry.
 
-Foundry consists of:
+## Dependencies
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- [Foundry](https://book.getfoundry.sh/) - Ethereum development toolkit
+- [OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/) - Secure smart contract library
+- [Aragon OSx](https://github.com/aragon/osx) - Aragon plugin framework
 
-## Documentation
+## Project Structure
 
-https://book.getfoundry.sh/
+```
+├── src/           # Plugin contracts go here
+├── test/          # Test files
+├── script/        # Deployment scripts
+└── lib/           # Dependencies
+```
 
-## Usage
+## Getting Started
 
 ### Build
 
 ```shell
-$ forge build
+forge build
 ```
 
 ### Test
 
 ```shell
-$ forge test
+forge test
 ```
 
 ### Format
 
 ```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
+forge fmt
 ```
 
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+forge script script/YourPlugin.s.sol:YourPluginScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
-### Cast
+## Resources
 
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- [Aragon OSx Documentation](https://devs.aragon.org/)
+- [Foundry Book](https://book.getfoundry.sh/)
+- [OpenZeppelin Docs](https://docs.openzeppelin.com/)

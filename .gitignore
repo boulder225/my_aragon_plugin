@@ -28,6 +28,9 @@ broadcast/
 .env.local
 .env.*.local
 
+# Dependencies (managed via git submodules)
+lib/
+
 # Node modules (if you add any JS tooling)
 node_modules/
 
