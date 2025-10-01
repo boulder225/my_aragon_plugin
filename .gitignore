@@ -1,0 +1,57 @@
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
+
+# Compiler files
+cache/
+out/
+broadcast/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Dotenv file
+.env
+.env.local
+.env.*.local
+
+# Node modules (if you add any JS tooling)
+node_modules/
+
+# Foundry files
+lcov.info
+coverage/
+artifacts/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation
+docs/
+
+# Logs
+*.log
+logs/
+
+# Flattened files
+flattened/
+
+# Gas reports
