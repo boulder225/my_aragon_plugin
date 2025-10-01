@@ -1,3 +1,4 @@
 @aragon/osx/=lib/osx/packages/contracts/src/
+@aragon/osx-commons-contracts/=lib/osx-commons/contracts/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 forge-std/=lib/forge-std/src/
